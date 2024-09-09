@@ -5,7 +5,7 @@
 }
 
 body {
-    min-height: 70vh;
+    min-height: 100vh;
     background-color: black;
     color: whitesmoke;
     font-size: 3rem;
@@ -28,7 +28,8 @@ section {
     gap: 1rem;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-size: 2.5rem;
 }
 
@@ -42,13 +43,13 @@ a {
 }
 
 a:hover {
-    opacity: .65;
+    opacity: .85;
 }
 
 .banner {
     display: block;
-    width: 50%;
-    max-width: 200px;
+    width: 100%;
+    max-width: 800px;
 }
 
 .form-with-validation {
@@ -74,4 +75,37 @@ a:hover {
     padding: 0.5rem;
     border-radius: 10px;
     width: 125px;
+}
+
+.helptext {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.helptext ul {
+    list-style-type: none;
+}
+
+.errorlist {
+    color: #F00;
+    margin-left: 2rem;
+}
+
+.errorlist li::marker {
+    content: '🚨 ';
+}
+
+
+.logout {
+    display: inline-block;
+}
+
+.logout-button {
+    font-size: 2.5rem;
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+}
+
+.logout-button:hover {
+    opacity: .85;
 }
